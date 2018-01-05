@@ -1,0 +1,18 @@
+<template>
+  <h1>${message}</h1>
+  <div style="float:left">
+  <canvas id="game" width="400" height="600"
+  style="border:1px solid #000000; background-color: #aaaaff; "></canvas>
+  </div>
+  <div style="float:right">
+  <h1>Points:<br/> ${points} </h1>
+  <h1>Level:<br/> ${level} </h1>
+  <h1>Missed:<br/> ${negativepoints} </h1>
+  <h2>
+    &larr; Move object left<br/>
+    &rarr; Move object right<br/>
+  </h2>
+    <h1 if.bind="gameover">Game Over</h1>
+    <h2 if.bind="gameover">press ENTER<br/> to start new game</h1>
+  </div>
+</template>
