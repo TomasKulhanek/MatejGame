@@ -14,7 +14,6 @@ export class App {
 
   // This function is called by the aliased method
   keypressInput(e) {
-
     if (e.keyCode == 37 ) //left
     {
       if (this.nx>30) {
